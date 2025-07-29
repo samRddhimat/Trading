@@ -27,6 +27,7 @@ def extract_deal_section_to_csv(excel_file, output_csv, keywords):
         writer = csv.writer(f)
         writer.writerows(rows_to_write)
 
+    del rows
 # Usage
 keywords_to_match = ["rnd","sfe"] #["deal", "open positions", "usd"]
 extract_deal_section_to_csv("D:\\Repository\\Trading\\ReportHistory-205350376.xlsx", \
